@@ -1,0 +1,27 @@
+import React, { Component } from 'react'
+
+export class Navbar extends Component {
+  render() {
+    return (
+     // lap screen
+        <div className='relative rounded-b-lg  top-0 left-0 right-0 w-full h-[80px] flex justify-between items-center pz-4  text-black'>
+          
+            <div >
+                <img style={{width:'75px'}} src={"data:image/png;base64,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"}className='rounded-full' alt="logo" />
+            </div>
+            <ul className=' grid space-x-7 grid-cols-6 md:flex justify-center items-start mr-10 font-semibold'>
+              <li >Home</li>
+              <li >About Us</li>
+              <li >Programs</li>
+              <li >Placements</li>
+              <li >Help</li>
+              <li> <button className='border-[2px] font-bold border-black rounded-md h-[38px] w-[100px]'>Sign In</button> </li>
+              <li> <button className='bg-yellow-300 rounded-md h-10 w-64 font-semibold shadow-lg  hover:shadow-yellow-500/50'>Book Your Free Trial, Now</button></li>
+            </ul>
+        </div>
+      
+    )
+  }
+}
+
+export default Navbar
