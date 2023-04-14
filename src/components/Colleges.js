@@ -3,13 +3,13 @@ import React, { Component } from 'react'
 export class Colleges extends Component {
   render() {
     return (
-      <div>
+      <div >
         {/* heading for the component */}
-      <div className='mt-10 font-semibold font-sans text-4xl'>Students from Top Colleges, <br />
+      <div className='mt-10  font-semibold font-sans ml-[100px] text-4xl grid  place-items-center'>Students from Top Colleges <br />
       Cracked their Dream Jobs
       </div>
       {/* now multiple cols in a single row= different colleges */}
-<div className=' flex-wrap grid grid-cols-5 justify-center sm:p-0 md:flex p-4 md:min-w-[600px]  sm:flex-nowrap sm:justify-between'>
+<div className=' flex-wrap grid grid-cols-5 justify-center sm:p-0 md:flex p-4 md:min-w-[600px]  sm:flex-nowrap sm:justify-between mt-[10px]'>
 <div className='ml-10 mt-2 flex flex-col h-[150px]'>
   <img className='h-[90px] rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlty9SU5MJ6ULHwy91NuNbiB-wCsOIvdtLuP6DP8G39w&s" alt="nsut" />
 <h4> <b>NSUT</b></h4>
